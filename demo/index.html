@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="Description" content="Put your description here." />
+    <base href="/" />
+    <title>alert web component integration example</title>
+  </head>
+
+  <body style="background-color: lightgrey">
+    <div id="outlet"></div>
+    <script type="module" src="../dist/component.js"></script>
+
+    <script type="text/javascript">
+      function handleClose(event) {
+        console.log(event);
+      }
+    </script>
+
+    <div style="width: 620px; min-height: 400px; background-color: white; border: 1px solid black">
+      <super-alert onclose="handleClose(event)"></super-alert>
+    </div>
+  </body>
+</html>

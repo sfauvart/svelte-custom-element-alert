@@ -1,0 +1,53 @@
+{
+  "name": "svelte-custom-element-alert",
+  "version": "1.0.0",
+  "description": "Alert box web component in Svelte",
+  "module": "dist/component.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sfauvart/svelte-custom-element-alert.git"
+  },
+  "keywords": [
+    "svelte",
+    "custom-element",
+    "webcomponent",
+    "jest",
+    "esm"
+  ],
+  "author": "Sébastien FAUVART",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sfauvart/svelte-custom-element-alert/issues"
+  },
+  "homepage": "https://github.com/sfauvart/svelte-custom-element-alert#readme",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && rollup -c rollup.config.js",
+    "build:watch": "rollup -c rollup.config.js -w",
+    "serve": "while ! test -f dist/component.js ; do sleep 1 ; done && es-dev-server --app-index demo/index.html --node-resolve --open --watch",
+    "start:local": "npm run clean && concurrently --kill-others \"npm:build:watch\" \"npm:serve\"",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
+  },
+  "devDependencies": {
+    "@open-wc/building-rollup": "^2.0.1",
+    "@testing-library/jest-dom": "^5.15.1",
+    "@testing-library/svelte": "^3.0.3",
+    "concurrently": "^6.4.0",
+    "deepmerge": "^4.2.2",
+    "dom-testing-library": "^5.0.0",
+    "es-dev-server": "^2.1.0",
+    "jest": "^27.3.1",
+    "prettier": "2.4.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.60.1",
+    "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-svelte": "^7.1.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "sass": "^1.43.4",
+    "svelte": "^3.44.2",
+    "svelte-jester": "^2.1.5",
+    "svelte-preprocess": "^4.9.8"
+  }
+}

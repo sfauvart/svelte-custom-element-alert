@@ -1,0 +1,17 @@
+# Nodejs
+node_modules/
+dist/
+
+# OSX
+.DS_Store
+
+# Vim
+*.swp
+*.swo
+
+# patch
+*.orig
+*.rej
+
+# Local environment
+.env
