@@ -8,7 +8,7 @@
     <title>alert web component integration example</title>
   </head>
 
-  <body style="background-color: lightgrey">
+  <body style="background-color: grey">
     <div id="outlet"></div>
     <script type="module" src="../dist/component.js"></script>
 
@@ -18,8 +18,6 @@
       }
     </script>
 
-    <div style="width: 620px; min-height: 400px; background-color: white; border: 1px solid black">
-      <super-alert onclose="handleClose(event)"></super-alert>
-    </div>
+    <super-alert onclose="handleClose(event)"></super-alert>
   </body>
 </html>

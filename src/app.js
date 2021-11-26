@@ -1,1 +1,1 @@
-import './app.wc.svelte'
+import './app.wc.svelte';

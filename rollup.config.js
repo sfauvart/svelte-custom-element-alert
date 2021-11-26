@@ -6,7 +6,7 @@ import sveltePreprocess from './svelte.config.js';
 
 const svelteComponents = () => {
   return {
-    input: { component: 'src/app.js'},
+    input: { component: 'src/app.js' },
     output: [
       {
         dir: 'dist',
