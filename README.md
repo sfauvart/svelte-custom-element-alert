@@ -6,6 +6,7 @@ Alert box web component in Svelte
 
 Experimentation(demonstration ?) of building a webcomponent (custom element) in ESM with svelte, rollup and jest.
 
+![screenshot](./docs/screenshot.png)
 ## Usage
 
 like every nodejs project, install deps with :
